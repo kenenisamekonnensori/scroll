@@ -25,7 +25,7 @@ export function Hero() {
         </Button>
       </div>
 
-      <div className="relative mx-auto rounded-[2rem] border-[12px] border-gray-900 bg-gray-900 overflow-hidden shadow-2xl">
+      <div className="relative mx-auto rounded-[2rem] border-12 border-gray-900 bg-gray-900 overflow-hidden shadow-2xl">
         <img 
           src="https://placehold.co/1200x675/1a1a1a/ffffff?text=App+Dashboard+Screenshot" 
           alt="ScrollGuard Dashboard" 

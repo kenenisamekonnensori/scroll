@@ -53,7 +53,7 @@ export function Features() {
         </div>
 
         {/* Card 4 (Zen Toggle Banner inside grid) */}
-        <div className="bg-gradient-to-br from-[#4d48b1] to-[#3D3A8A] p-8 rounded-3xl shadow-sm md:col-span-2 text-white flex flex-col justify-center">
+        <div className="bg-linear-to-br from-[#4d48b1] to-[#3D3A8A] p-8 rounded-3xl shadow-sm md:col-span-2 text-white flex flex-col justify-center">
           <h3 className="text-2xl font-bold mb-3">The Zen Toggle</h3>
           <p className="text-purple-200 mb-8 max-w-md">
             One switch to silence all non-essential notifications and lock distracting domains instantly.

@@ -21,8 +21,8 @@ export function Minimalist() {
 
       <div className="flex gap-6 overflow-x-auto pb-8 snap-x max-w-6xl mx-auto px-4 md:px-0 scrollbar-hide">
         {/* Screen 1 */}
-        <div className="min-w-[280px] sm:min-w-[320px] bg-white p-4 rounded-3xl shadow-xl flex-shrink-0 snap-center border border-gray-100">
-          <div className="bg-[#1A3B8C] h-[600px] rounded-2xl p-6 flex flex-col items-center justify-start text-white">
+        <div className="min-w-70 sm:min-w-[320px] bg-white p-4 rounded-3xl shadow-xl shrink-0 snap-center border border-gray-100">
+          <div className="bg-[#1A3B8C] h-150 rounded-2xl p-6 flex flex-col items-center justify-start text-white">
             <div className="w-32 h-32 border-[6px] border-white rounded-full flex items-center justify-center mt-12 mb-4">
               <span className="text-4xl font-bold">659</span>
             </div>
@@ -34,8 +34,8 @@ export function Minimalist() {
         </div>
 
         {/* Screen 2 */}
-        <div className="min-w-[280px] sm:min-w-[320px] bg-white p-4 rounded-3xl shadow-xl flex-shrink-0 snap-center border border-gray-100">
-          <div className="bg-gray-50 h-[600px] rounded-2xl border border-gray-200">
+        <div className="min-w-70 sm:min-w-[320px] bg-white p-4 rounded-3xl shadow-xl shrink-0 snap-center border border-gray-100">
+          <div className="bg-gray-50 h-150 rounded-2xl border border-gray-200">
             {/* Simplified wireframe representation */}
             <div className="h-full flex flex-col p-4">
                <div className="bg-purple-100 h-24 rounded-xl mb-4"></div>
@@ -49,8 +49,8 @@ export function Minimalist() {
         </div>
 
         {/* Screen 3 */}
-        <div className="min-w-[280px] sm:min-w-[320px] bg-white p-4 rounded-3xl shadow-xl flex-shrink-0 snap-center border border-gray-100">
-          <div className="bg-gray-50 h-[600px] rounded-2xl border border-gray-200 relative overflow-hidden">
+        <div className="min-w-70 sm:min-w-[320px] bg-white p-4 rounded-3xl shadow-xl shrink-0 snap-center border border-gray-100">
+          <div className="bg-gray-50 h-150 rounded-2xl border border-gray-200 relative overflow-hidden">
              {/* Settings mock */}
              <div className="p-4 space-y-4">
                <div className="h-8 bg-gray-200 w-1/2 rounded mb-6"></div>
@@ -64,8 +64,8 @@ export function Minimalist() {
         </div>
 
         {/* Screen 4 */}
-        <div className="min-w-[280px] sm:min-w-[320px] bg-gray-900 p-4 rounded-3xl shadow-xl flex-shrink-0 snap-center object-cover">
-          <div className="h-[600px] rounded-2xl bg-[#0a1122] flex items-center justify-center border border-gray-800">
+        <div className="min-w-70 sm:min-w-[320px] bg-gray-900 p-4 rounded-3xl shadow-xl shrink-0 snap-center object-cover">
+          <div className="h-150 rounded-2xl bg-[#0a1122] flex items-center justify-center border border-gray-800">
             <div className="text-blue-500 opacity-50 p-8 text-center text-xs space-y-2 font-mono">
               <p>{"{"}</p>
               <p className="pl-4">&quot;rules&quot;: [</p>

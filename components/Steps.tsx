@@ -1,37 +1,39 @@
 export function Steps() {
   return (
-    <section className="bg-gray-50 py-24 px-4">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-16">Three steps to clarity</h2>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-          <div className="flex flex-col items-center">
-            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-xl font-bold text-[#3D3A8A] mb-6">
+    <section className="px-4 py-24">
+      <div className="mx-auto max-w-5xl">
+        <h2 className="mb-14 text-center text-3xl font-bold text-slate-900 md:text-4xl">
+          Three steps to stronger control
+        </h2>
+
+        <div className="grid grid-cols-1 gap-8 text-center md:grid-cols-3">
+          <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-[0_15px_45px_rgba(15,23,42,0.06)]">
+            <div className="mx-auto mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-cyan-100 text-xl font-bold text-cyan-700">
               01
             </div>
-            <h3 className="text-xl font-bold mb-4">Sync Devices</h3>
-            <p className="text-gray-500">
-              Connect your phone, tablet, and desktop for a unified view of your digital footprint.
+            <h3 className="mb-3 text-xl font-bold text-slate-900">Choose apps</h3>
+            <p className="text-slate-600">
+              Select the social apps and games you want ScrollGuard to monitor.
             </p>
           </div>
 
-          <div className="flex flex-col items-center">
-            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-xl font-bold text-[#3D3A8A] mb-6">
+          <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-[0_15px_45px_rgba(15,23,42,0.06)]">
+            <div className="mx-auto mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-cyan-100 text-xl font-bold text-cyan-700">
               02
             </div>
-            <h3 className="text-xl font-bold mb-4">Audit Habits</h3>
-            <p className="text-gray-500">
-              Let ScrollGuard analyze which apps are serving you and which are stealing your time.
+            <h3 className="mb-3 text-xl font-bold text-slate-900">Set time limits</h3>
+            <p className="text-slate-600">
+              Define a daily limit for each app based on your focus goals.
             </p>
           </div>
 
-          <div className="flex flex-col items-center">
-            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-xl font-bold text-[#3D3A8A] mb-6">
+          <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-[0_15px_45px_rgba(15,23,42,0.06)]">
+            <div className="mx-auto mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-cyan-100 text-xl font-bold text-cyan-700">
               03
             </div>
-            <h3 className="text-xl font-bold mb-4">Automate Focus</h3>
-            <p className="text-gray-500">
-              Enable smart schedules that adapt to your workflow and protect your mental space.
+            <h3 className="mb-3 text-xl font-bold text-slate-900">Auto-block kicks in</h3>
+            <p className="text-slate-600">
+              Once time runs out, the app is blocked until your next allowed period.
             </p>
           </div>
         </div>

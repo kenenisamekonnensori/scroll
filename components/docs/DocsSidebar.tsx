@@ -37,10 +37,10 @@ const docsSections = [
 
 export function DocsSidebar() {
   return (
-    <aside className="hidden w-72 shrink-0 border-r border-slate-200/80 px-6 py-10 lg:block">
+    <aside className="hidden w-72 shrink-0 border-r border-slate-200/80 bg-white/60 px-6 py-10 lg:block">
       <div className="sticky top-24">
         <div className="mb-8">
-          <p className="text-sm font-semibold text-[#4b53c8]">Documentation</p>
+          <p className="text-sm font-semibold text-cyan-700">Documentation</p>
           <p className="mt-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-slate-400">
             User Guide
           </p>
@@ -52,7 +52,7 @@ export function DocsSidebar() {
               <li key={href}>
                 <Link
                   href={href}
-                  className="flex items-center gap-3 rounded-2xl px-3 py-3 text-sm font-medium text-slate-500 transition hover:bg-white hover:text-slate-900"
+                  className="flex items-center gap-3 rounded-2xl px-3 py-3 text-sm font-medium text-slate-500 transition hover:bg-cyan-50 hover:text-slate-900"
                 >
                   <Icon className="size-4 text-slate-400" />
                   <span>{label}</span>

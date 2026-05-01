@@ -28,7 +28,7 @@ export function DocsFooter() {
               ScrollGuard
             </h3>
             <p className="mt-3 max-w-xs text-[11px] font-medium uppercase tracking-[0.18em] text-slate-400">
-              © 2024 ScrollGuard Inc. Designed for digital health.
+              © 2026 ScrollGuard. Designed for digital focus.
             </p>
           </div>
 
@@ -100,7 +100,7 @@ export function DocsFooter() {
             </p>
             <Link
               href="#installation"
-              className="mt-2 inline-flex items-center gap-2 text-sm font-semibold text-[#4b53c8] transition hover:text-[#353da5]"
+              className="mt-2 inline-flex items-center gap-2 text-sm font-semibold text-cyan-700 transition hover:text-cyan-800"
             >
               Installation Guide
               <ArrowRight className="size-4" />

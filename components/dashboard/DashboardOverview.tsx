@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Users, Zap, Ban, Clock } from "lucide-react";
 
 export function DashboardOverview() {
@@ -15,7 +16,13 @@ export function DashboardOverview() {
             <span className="text-[10px] font-bold text-[#1A3B8C] tracking-wide uppercase">LIVE SYSTEM</span>
           </div>
           <div className="relative">
-            <img src="https://i.pravatar.cc/150?u=admin" className="w-9 h-9 rounded-xl shadow-sm border border-gray-200" alt="Admin" />
+            <Image
+              src="https://i.pravatar.cc/150?u=admin"
+              className="w-9 h-9 rounded-xl shadow-sm border border-gray-200"
+              alt="Admin"
+              width={36}
+              height={36}
+            />
           </div>
         </div>
       </div>

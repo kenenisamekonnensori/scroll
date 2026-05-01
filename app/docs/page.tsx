@@ -6,7 +6,7 @@ import { DocsFooter } from "@/components/docs/DocsFooter";
 
 export default function DocsPage() {
   return (
-    <div className="min-h-screen bg-[#f7f8fb]">
+    <div className="min-h-screen bg-[#f7fbfd]">
       <Navbar active="docs" />
       <div className="mx-auto flex w-full max-w-[1440px]">
         <DocsSidebar />

@@ -128,3 +128,258 @@
     @apply font-sans;
   }
 }
+
+@keyframes sg-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -18px, 0) scale(1.04);
+  }
+}
+
+@keyframes sg-grid-pan {
+  0% {
+    transform: perspective(900px) rotateX(70deg) translateY(-4%);
+  }
+  100% {
+    transform: perspective(900px) rotateX(70deg) translateY(4%);
+  }
+}
+
+@keyframes sg-card-float {
+  0%,
+  100% {
+    transform: perspective(1000px) rotateY(-8deg) rotateX(5deg) translateY(0);
+  }
+  50% {
+    transform: perspective(1000px) rotateY(-6deg) rotateX(4deg) translateY(-8px);
+  }
+}
+
+@keyframes sg-soft-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes sg-showcase-drift {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes sg-showcase-glow {
+  0%,
+  100% {
+    opacity: 0.45;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes sg-features-pan {
+  0% {
+    background-position:
+      0% 0%,
+      100% 0%,
+      center,
+      center;
+  }
+  100% {
+    background-position:
+      6% 0%,
+      94% 0%,
+      center,
+      center;
+  }
+}
+
+@keyframes sg-graph-line {
+  from {
+    stroke-dashoffset: 380;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes sg-graph-bar {
+  0%,
+  100% {
+    transform: scaleY(0.82);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+.sg-grid {
+  background-image:
+    radial-gradient(circle at 20% 10%, rgb(34 211 238 / 20%), transparent 38%),
+    radial-gradient(circle at 85% 20%, rgb(14 165 233 / 18%), transparent 42%),
+    linear-gradient(rgb(148 163 184 / 20%) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(148 163 184 / 20%) 1px, transparent 1px);
+  background-size:
+    auto,
+    auto,
+    42px 42px,
+    42px 42px;
+  background-position:
+    center,
+    center,
+    center,
+    center;
+  opacity: 0.7;
+  animation: sg-grid-pan 10s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+
+.sg-orb {
+  height: 22rem;
+  width: 22rem;
+  border-radius: 9999px;
+  filter: blur(72px);
+  opacity: 0.45;
+  animation: sg-float 8s ease-in-out infinite;
+}
+
+.sg-orb-a {
+  background: rgb(34 211 238 / 42%);
+}
+
+.sg-orb-b {
+  background: rgb(56 189 248 / 36%);
+  animation-delay: 1.2s;
+}
+
+.sg-orb-c {
+  height: 18rem;
+  width: 18rem;
+  background: rgb(125 211 252 / 42%);
+  animation-delay: 2s;
+}
+
+.sg-card {
+  animation: sg-card-float 7s ease-in-out infinite;
+  transform-style: preserve-3d;
+}
+
+.sg-soft-float {
+  animation: sg-soft-float 6s ease-in-out infinite;
+}
+
+.sg-soft-float-delay {
+  animation-delay: 1.4s;
+}
+
+.sg-showcase-card {
+  animation: sg-showcase-drift 7s ease-in-out infinite;
+  transition: transform 300ms ease, box-shadow 300ms ease, border-color 300ms ease;
+}
+
+.sg-showcase-card:hover {
+  transform: translateY(-6px);
+  border-color: rgb(186 230 253);
+  box-shadow: 0 24px 56px rgba(15, 23, 42, 0.12);
+}
+
+.sg-showcase-phone {
+  animation: sg-soft-float 6.5s ease-in-out infinite;
+}
+
+.sg-showcase-glow {
+  animation: sg-showcase-glow 4s ease-in-out infinite;
+}
+
+.sg-features-bg {
+  background-image:
+    radial-gradient(circle at 15% 12%, rgb(34 211 238 / 22%), transparent 34%),
+    radial-gradient(circle at 84% 8%, rgb(125 211 252 / 26%), transparent 36%),
+    linear-gradient(rgb(148 163 184 / 14%) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(148 163 184 / 14%) 1px, transparent 1px);
+  background-size:
+    auto,
+    auto,
+    56px 56px,
+    56px 56px;
+  opacity: 0.85;
+  animation: sg-features-pan 10s ease-in-out infinite alternate;
+}
+
+.sg-features-orb {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 9999px;
+  filter: blur(72px);
+  opacity: 0.42;
+  animation: sg-soft-float 8s ease-in-out infinite;
+}
+
+.sg-features-orb-a {
+  background: rgb(34 211 238 / 48%);
+}
+
+.sg-features-orb-b {
+  background: rgb(56 189 248 / 42%);
+  animation-delay: 1s;
+}
+
+.sg-feature-card {
+  transition: transform 300ms ease, box-shadow 300ms ease, border-color 300ms ease;
+}
+
+.sg-feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 56px rgba(15, 23, 42, 0.12);
+}
+
+.sg-graph-panel {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.65);
+}
+
+.sg-graph-line {
+  stroke-dasharray: 380;
+  animation: sg-graph-line 2.8s ease-out both;
+}
+
+.sg-graph-bar {
+  transform-origin: bottom;
+  animation: sg-graph-bar 2.8s ease-in-out infinite;
+}
+
+.sg-pill-pulse {
+  animation: sg-showcase-glow 3s ease-in-out infinite;
+}
+
+.sg-docs-panel {
+  transition: transform 320ms ease, box-shadow 320ms ease, border-color 320ms ease;
+}
+
+.sg-docs-panel:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 22px 54px rgba(15, 23, 42, 0.1);
+}
+
+.sg-docs-card {
+  transition: transform 280ms ease, box-shadow 280ms ease;
+}
+
+.sg-docs-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.1);
+}
+
+.sg-docs-phone {
+  animation: sg-soft-float 6.8s ease-in-out infinite;
+}
